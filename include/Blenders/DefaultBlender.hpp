@@ -6,6 +6,6 @@
 #include "BitmapReader/BitmapReader.hpp"
 #include "ErrorCode.hpp"
 
-ErrorCode BlendBatch (BitmapImage *source, BitmapImage *destination, size_t pixelIndex);
+ErrorCode BlendBatchDefault (BitmapImage *source, BitmapImage *destination, size_t pixelIndex);
 
 #endif
