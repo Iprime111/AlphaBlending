@@ -1,0 +1,3 @@
+BLENDER (BlendBatchDefault,        "Naive blender",           0, 1)
+BLENDER (BlendBatchArrayOptimized, "Array optimized blender", 1, 1)
+BLENDER (BlendBatchSimd,           "SIMD blender",            2, PIXEL_BATCH)

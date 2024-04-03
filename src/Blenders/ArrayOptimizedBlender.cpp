@@ -6,8 +6,7 @@
 #include "Config.hpp"
 #include "ErrorCode.hpp"
 
-const static size_t BYTES_PER_PIXEL = 4;
-const static size_t BATCH_RGB_SIZE  = (BYTES_PER_PIXEL - 1) * PIXEL_BATCH;
+const static size_t BATCH_RGB_SIZE  = BYTES_PER_PIXEL - 1;
 
 #define Foreach(EXPRESSION) do {for (size_t colorChannel = 0; colorChannel < BATCH_RGB_SIZE; colorChannel++) {EXPRESSION;}} while (0)
 

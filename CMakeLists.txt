@@ -26,3 +26,7 @@ set_target_properties (${PROJECT_NAME} PROPERTIES
                        LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib"
                        RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
 
+configure_file (${CMAKE_CURRENT_SOURCE_DIR}/img/cat.bmp   ${CMAKE_BINARY_DIR}/bin/img/cat.bmp   COPYONLY)
+configure_file (${CMAKE_CURRENT_SOURCE_DIR}/img/table.bmp ${CMAKE_BINARY_DIR}/bin/img/table.bmp COPYONLY)
+
+

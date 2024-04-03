@@ -3,9 +3,8 @@
 
 #include "Blenders/DefaultBlender.hpp"
 #include "BitmapReader/BitmapReader.hpp"
+#include "Config.hpp"
 #include "ErrorCode.hpp"
-
-const size_t BYTES_PER_PIXEL = 4;
 
 ErrorCode BlendBatchDefault (BitmapImage *source, BitmapImage *destination, size_t pixelIndex) {
     
