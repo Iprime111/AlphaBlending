@@ -15,7 +15,7 @@ static size_t    GetBlenderIndex         ();
 static char     *GetApplicationDirectory ();
 static ErrorCode LoadBitmaps             (BitmapImage *tableImage, BitmapImage *catImage);
 
-int main () {
+int main () {   // TODO: there's lots of stuff is happening at main. Maybe rearrange it to other functions?
     BitmapImage tableImage = {};
     BitmapImage catImage   = {};
 
