@@ -13,5 +13,5 @@ const size_t BLENDERS_COUNT  = 3;
 const char CAT_IMAGE_PATH    [] = "%s/img/cat.bmp";
 const char TABLE_IMAGE_PATH  [] = "%s/img/table.bmp";
 
-const char OUTPUT_IMAGE_PATH [] = "%s/Downloads/out.bmp";
+const char OUTPUT_IMAGE_PATH [] = "%s/Downloads/out.bmp"; // TODO: Why downloads?? Use /tmp directory. Also, there's a function to create out-files names for you.
 #endif

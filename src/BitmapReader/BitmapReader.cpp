@@ -9,7 +9,7 @@
 #include "ErrorCode.hpp"
 
 ErrorCode InitBitmap (BitmapImage *bitmap, int32_t width, int32_t height, uint16_t bitsPerPixel) {
-    assert (bitmap);
+    assert (bitmap); // TODO: maybe asserts on positive width and height?
 
     bitmap->header     = {};
     bitmap->infoHeader = {};

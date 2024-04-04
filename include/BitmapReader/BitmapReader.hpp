@@ -7,7 +7,8 @@
 #include "BitmapDataTypes.hpp"
 
 //WARNING works only with argb32 with rgba color masks : 0x00FF0000, 0x0000FF00, 0x000000FF, 0xFF000000
-//WARNING imageSize parameter should be set
+//WARNING imageSize parameter should be set //TODO: you should put this warningts either to docs or to users' output
+                                            //TODO: what if it's not?
 
 struct BitmapImage {
     BitmapHeader      header     = {};
