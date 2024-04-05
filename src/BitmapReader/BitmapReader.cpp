@@ -8,8 +8,9 @@
 #include "BitmapReader/BitmapDataTypes.hpp"
 #include "ErrorCode.hpp"
 
+//NOTE width and height can have negative values according to .bmp specifications
 ErrorCode InitBitmap (BitmapImage *bitmap, int32_t width, int32_t height, uint16_t bitsPerPixel) {
-    assert (bitmap); // TODO: maybe asserts on positive width and height?
+    assert (bitmap);
 
     bitmap->header     = {};
     bitmap->infoHeader = {};

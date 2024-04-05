@@ -5,6 +5,7 @@
 
 const uint16_t DEFAULT_SIGNATURE = 0x4d42;
 
+//NOTE BmpCompression values are taken from .bmp file specification
 enum class BmpCompression : uint32_t {
     BI_RGB            = 0,
     BI_RLE8           = 1,
@@ -13,7 +14,7 @@ enum class BmpCompression : uint32_t {
     BI_JPEG           = 4,
     BI_PNG            = 5,
     BI_ALPHABITFIELDS = 6,
-    BI_CMYK           = 11, // TODO: since when 6 + 1 = 11? https://imgur.com/a/BhW4gAa
+    BI_CMYK           = 11,
     BI_CMYKRLE8       = 12,
     BI_CMYKRLE4       = 13,
 };
@@ -28,7 +29,7 @@ struct BitmapHeader {
 
 struct BitmapInfoHeader {
     uint32_t       infoHeaderSize  = sizeof (BitmapInfoHeader);
-    int32_t       pictureWidth     = 0; // TODO not properly aligned
+    int32_t        pictureWidth    = 0;
     int32_t        pictureHeight   = 0;
     uint16_t       planesNumber    = 1;
     uint16_t       bitsPerPixel    = 32;

@@ -8,7 +8,12 @@
 
 const static size_t BATCH_RGB_SIZE  = BYTES_PER_PIXEL - 1;
 
-#define Foreach(EXPRESSION) do {for (size_t colorChannel = 0; colorChannel < BATCH_RGB_SIZE; colorChannel++) {EXPRESSION;}} while (0) // TODO: make it multiline! It's hard to read one-lined code
+#define Foreach(EXPRESSION)                                                             \
+    do {                                                                                \
+        for (size_t colorChannel = 0; colorChannel < BATCH_RGB_SIZE; colorChannel++) {  \
+            EXPRESSION;                                                                 \
+        }                                                                               \
+    } while (0)
 
 ErrorCode BlendBatchArrayOptimized (BitmapImage *source, BitmapImage *destination, size_t pixelIndex) {
     
